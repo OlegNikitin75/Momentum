@@ -34,10 +34,7 @@
 ::placeholder {
   color: #666;
 }
-::selection {
-  background-color: var(--accent);
-  color: #fff;
-}
+
 input,
 textarea {
   outline: none;
@@ -59,11 +56,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   min-height: 100vh;
 }
 .container {
-  max-width: 1430px;
+ max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -73,6 +69,11 @@ body {
 .image {
   max-width: 100%;
 }
+.btn-reset {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
 .list-reset {
   margin: 0;
   padding: 0;
@@ -81,7 +82,96 @@ body {
 .header {
   min-height: 220px;
 }
+.section-time {
+  position: relative;
+  width: 100%;
+  padding: 0 50px;
+  text-align:center
+}
 .time__inner {
+  position: relative;
   font-size: var(--time-font);
   font-weight: 400;
+  line-height: 1;
+}
+.time__settings {
+  position: absolute;
+  top: 5%;
+  right: 8%;
+  bottom: 0;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  padding: 22px 0;
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+  cursor: pointer;
+  background-size: cover;
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+.btn--active {
+  visibility: visible;
+  opacity: 1;
+}
+.btn:hover {
+  background-color: rgba(256, 256, 256, 0.3);
+}
+.settings__clock {
+  background-image: url("../images/clock.svg");
+}
+.fieldset__format {
+  width: 150px;
+  height: 80px;
+  border-radius: 10px;
+  display: none;
+}
+.active {
+  display: block;
+}
+.legend {
+  text-align: center;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.label {
+  position: absolute;
+  right: 50%;
+ transform: translateX(50%);
+}
+.checkbox-input {
+  appearance: none;
+  display: none;
+}
+.checkbox-input--clone {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5) inset;
+  border-radius: 50px;
+}
+.checkbox__indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: linear-gradient(0deg, rgb(70, 115, 249) 31%, rgb(239, 252, 252));
+  transform: scale(.8);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .7);
+  transition: .3s;
+}
+.checkbox-input:checked ~ .checkbox__indicator {
+  left: 30px;
 }

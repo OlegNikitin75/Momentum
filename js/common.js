@@ -1,5 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
+import setDate from './components/Time.js';
+import timeSettings from './components/Time.settings.js'
 
-	// $('body').hide()
+document.addEventListener('DOMContentLoaded', () => {
+  setInterval(setDate, 1000);
+  timeSettings();
 
-})
+
+
+});
+
+

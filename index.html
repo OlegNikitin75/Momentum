@@ -26,23 +26,30 @@
       </div>
     </header>
     <main class="main">
-     <div class="container">
-        <section class="section-date section">
+      <div class="container">
+        <section class="section-time section">
           <div class="time__inner">
-            <span class="time__span section-date__span--hours">20</span>
-            <span class="time__span time__span--devider">:</span>
-            <span class="time__span time__span--minute">15</span>
-            <span class="time__span time__span--devider">:</span>
-            <span class="time__span time__span--second">45</span>
           </div>
+         <div class="time__settings">
+            <button class="btn btn-reset settings__clock"></button>
+            <fieldset class="fieldset fieldset__format">
+              <legend class="legend legend__format"><span>24 hours</span></legend>
+                <label class="label">
+                  <input class="checkbox-input" type="checkbox" checked>
+                  <span class="checkbox-input--clone"></span>
+                  <i class="checkbox__indicator"></i>
+                </label>
+             
+            </fieldset>
+         </div>
         </section>
         <section class="section-greetings section"></section>
-     </div>
+      </div>
     </main>
     <footer class="footer"></footer>
   </div>
 
-  <script src="./js/common.js"></script>
+  <script type="module" src="./js/common.js"></script>
 </body>
 
 </html>
