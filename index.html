@@ -22,28 +22,61 @@
         <ul class="header__list list-reset">
           <li class="header__item">qqqqqq</li>
           <li class="header__item">wwwwww</li>
+          <li class="header__item">
+            <select class="select select__lang" name="lang" id="select-lang">
+              <option class="select__item" value="0">Eng</option>
+              <option class="select__item" value="1">Рус</option>
+              <option class="select__item" value="2">Бел</option>
+            </select>
+          </li>
         </ul>
       </div>
     </header>
     <main class="main">
       <div class="container">
         <section class="section-time section">
+          <div class="col col--left">
+            <div class="time__mark">PM</div>
+          </div>
           <div class="time__inner">
           </div>
-         <div class="time__settings">
+          <div class="time__settings settings col col--right">
+
             <button class="btn btn-reset settings__clock"></button>
             <fieldset class="fieldset fieldset__format">
               <legend class="legend legend__format"><span>24 hours</span></legend>
-                <label class="label">
-                  <input class="checkbox-input" type="checkbox" checked>
-                  <span class="checkbox-input--clone"></span>
-                  <i class="checkbox__indicator"></i>
-                </label>
-             
+              <label class="label">
+                <input class="checkbox-input" type="checkbox" checked>
+                <span class="checkbox-input--clone"></span>
+                <i class="checkbox__indicator"></i>
+              </label>
+
             </fieldset>
-         </div>
+          </div>
         </section>
-        <section class="section-greetings section"></section>
+        <section class="section-greeting section">
+          <div class="col col--left">
+            <div class="time__mark"></div>
+          </div>
+          <div class="greeting__content">
+            <span id="greeting" class="greeting__span">Hello</span>
+            <span class="greeting__span">,</span>
+            <span id="user-name" class="greeting__span" contenteditable="false">User</span>
+            <span class="greeting__span">.</span>
+          </div>
+          <div class="greeting__settings settings col col--right">
+            <button class="btn btn-reset settings__greeting"></button>
+            <fieldset class="fieldset fieldset__greeting">
+                <button class="btn-reset greeting__btn">Edit Name</button>
+            </fieldset>
+          </div>
+        </section>
+        <section class="section-quote section">
+          <div class="quote__inner">
+            <h2 class="quote__title text-reset">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, cum.
+            </h2>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="footer"></footer>
