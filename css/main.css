@@ -53,6 +53,9 @@ body {
   background-color: rgb(4, 53, 53);
   margin: 0;
   padding: 0;
+  background-image:url("../images/evening/evening1.jpg");
+  background-position:center center;
+  background-size:cover;
 }
 .wrapper {
   display: flex;
@@ -116,8 +119,6 @@ body {
   background-color: #00000033;
   color:#000000;
 }
-
-
 .section-time {
   position: relative;
   width: 100%;

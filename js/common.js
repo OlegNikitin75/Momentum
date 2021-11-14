@@ -3,6 +3,7 @@ import timeSettings from './components/Time.settings.js';
 import greetingSettings from './components/Greeting.settings.js';
 import changeName from './components/Change.name.js';
 import changeGreeting from './components/Change.greet.js';
+import changeImgBg from './components/Change.img.js'
 
 
 
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   greetingSettings();
   changeName();
   changeGreeting();
+  changeImgBg();
 
 
 
