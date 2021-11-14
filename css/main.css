@@ -2,6 +2,7 @@
 
 :root {
   --accent-color: #ffffff;
+  --body-bg:#1d1d1d;
   --text-size: 20px;
   --line-height: 1.65;
   --user-font: roboto-st, sans-serif;
@@ -50,10 +51,9 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-  background-color: rgb(4, 53, 53);
+  background-color: var(--body-bg);
   margin: 0;
   padding: 0;
-  background-image:url("../images/evening/evening1.jpg");
   background-position:center center;
   background-size:cover;
 }
@@ -236,8 +236,7 @@ body {
   padding: 22px 0;
 }
 #user-name {
-  padding: 0 15px;
-  /* text-align: right; */
+  padding-left: 15px;
 }
 .settings__greeting {
   background-image: url("../images/emoji-smile.svg");
