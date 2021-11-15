@@ -8,7 +8,7 @@ const changeName = () => {
     name.style.background = 'transparent';
     name.blur();
     const userName = name.textContent;
-    localStorage.setItem('user-name',userName)
+    localStorage.setItem('user-name', userName)
   }
   changeNameBtn.addEventListener('click', () => {
     name.contentEditable = true;
@@ -19,7 +19,8 @@ const changeName = () => {
     if (e.key === 'Enter') noEdit();
   });
   document.body.addEventListener('click', (e) => {
-    if (!e.target.classList.contains('greeting__btn')) noEdit();
+    if (!e.target.classList.contains('greeting__btn')
+      && e.target !== name) noEdit();
   });
 }
 export default changeName;

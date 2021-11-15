@@ -1,14 +1,11 @@
 import { imagesUrls } from "./Data.js";
+import getRandomIntInclusive from "./Get.random.number.js";
 
 const changeImgBg = () => {
   const body = document.body;
   const date = new Date();
   const hours = date.getHours();
-  const getRandomIntInclusive = (min, max) => {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+  
   const maxImgNight = imagesUrls[0].length - 1;
   const maxImgMorning = imagesUrls[1].length - 1;
   const maxImgDay = imagesUrls[2].length - 1;

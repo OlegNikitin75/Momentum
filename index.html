@@ -21,7 +21,9 @@
       <div class="container">
         <ul class="header__list list-reset">
           <li class="header__item">qqqqqq</li>
-          <li class="header__item">wwwwww</li>
+          <li class="header__item">
+            <audio></audio>
+          </li>
           <li class="header__item">
             <select class="select select__lang" name="lang" id="select-lang">
               <option class="select__item" value="0">Eng</option>
@@ -66,20 +68,28 @@
           </div>
           <div class="greeting__settings settings col col--right">
             <button class="btn btn-reset settings__greeting"></button>
-            <fieldset class="fieldset fieldset__greeting">
-                <button class="btn-reset greeting__btn">Edit Name</button>
+            <fieldset class="fieldset fieldset__greeting fieldset__dim">
+              <button class="btn-reset greeting__btn fieldset__btn">Edit Name</button>
             </fieldset>
           </div>
         </section>
-        <section class="section-quote section">
-          <div class="quote__inner">
-            <h2 class="quote__title text-reset">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, cum.
-            </h2>
-          </div>
-        </section>
+
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="col col--left">
+      </div>
+      <div class="quote quote__inner">
+        <h2 class="quote__title text-reset"></h2>
+        <span class="quote__author"></span>
+      </div>
+      <div class="quote__settings settings col col--right">
+        <button class="btn btn-reset settings__quote"></button>
+        <fieldset class="fieldset fieldset__quote fieldset__dim">
+          <button class="btn-reset quote__btn fieldset__btn">Next Quote</button>
+        </fieldset>
+      </div>
+    </footer>
   </div>
 
   <script type="module" src="./js/common.js"></script>

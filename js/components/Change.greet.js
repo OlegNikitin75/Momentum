@@ -1,4 +1,6 @@
-import { greet } from './Data.js'
+import { greet } from './Data.js';
+import changeQuote from './Change.quote.js';
+import { hours } from './Get.date.js';
 const changeGreeting = () => {
 
   let val = 0;
@@ -9,8 +11,6 @@ const changeGreeting = () => {
   val = Number(localStorage.getItem('val'));
   langList.options[val].selected = true;
   const TimeChange = () => {
-    const time = new Date();
-    const hours = time.getHours();
     if (hours >= 0 && hours < 6) greeting.innerText = greet[val][0];
     if (hours >= 6 && hours < 12) greeting.innerText = greet[val][1];
     if (hours >= 12 && hours < 17) greeting.innerText = greet[val][2];
@@ -21,6 +21,7 @@ const changeGreeting = () => {
   langList.addEventListener('change', () => {
     val = langList.options[langList.selectedIndex].value;
     TimeChange();
+    changeQuote(val);
     localStorage.setItem('val', val);
   });
 }
