@@ -99,6 +99,9 @@ body {
 .text-reset {
   margin: 0;
 }
+.input-reset {
+  border: none;
+}
 .header {
   min-height: 220px;
   padding: 30px 0;
@@ -261,6 +264,36 @@ body {
 .fieldset__btn:hover {
   background: var(--color-elem-bg);
 }
+.section-focus__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.focus__inner {
+  text-align: center;
+}
+.focus__input-box {
+  max-width: 100%;
+  text-align: center;
+  
+}
+.focus__input {
+  display: inline-block;
+  margin: 0 auto;
+  border-bottom: 2px solid var(--accent-color);
+  font-size: 32px;
+}
+.focus__input:focus {
+ background-color:var(--color-elem-bg);
+}
+.section-focus__title {
+  font-weight: 400;
+  font-size: 40px;
+}
+.settings__focus {
+  background-image:url("../images/check-circle.svg")
+}
+
 
 .footer {
   min-height: 100px;
@@ -319,4 +352,3 @@ body {
 .quote__settings {
   padding-top: 30px;
 }
-

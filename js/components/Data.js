@@ -72,39 +72,44 @@ export const imagesUrls = [
 ];
 
 export const quotes = [
-  [{'Henry Ford':'"Chop your own wood and it will warm you twice"'},
-    {'Mahatma Gandhi':'"The weak can never forgive. Forgiveness is the attribute of the strong."'},
-    {'Winston Churchill':'"Success is the ability to go from failure to failure without losing your enthusiasm."'},
-    {'Marilyn Monroe':'"Keep smiling, because life is a beautiful thing and there\'s so much to smile about."'},
-    {'Friedrich Nietzsche':'"And if you gaze long into an abyss, the abyss also gazes into you."'},
-    {'Oscar  Wilde':'"Always forgive your enemies; nothing annoys them so much"'},
-    {'Steve Jobs':'"Your time is limited, so don’t waste it living someone else’s life"'},
-    {'Thomas Edison':'"Success is one percent inspiration, ninety-nine percent perspiration."'},
-    {'Kurt Cobain':'"I\'d rather be hated for who I am, than loved for who I am not."'},
-    {'Leonardo da Vinci':'"Simplicity is the ultimate sophistication."'}
+  [{ 'Henry Ford': '"Chop your own wood and it will warm you twice"' },
+  { 'Mahatma Gandhi': '"The weak can never forgive. Forgiveness is the attribute of the strong."' },
+  { 'Winston Churchill': '"Success is the ability to go from failure to failure without losing your enthusiasm."' },
+  { 'Marilyn Monroe': '"Keep smiling, because life is a beautiful thing and there\'s so much to smile about."' },
+  { 'Friedrich Nietzsche': '"And if you gaze long into an abyss, the abyss also gazes into you."' },
+  { 'Oscar  Wilde': '"Always forgive your enemies; nothing annoys them so much"' },
+  { 'Steve Jobs': '"Your time is limited, so don’t waste it living someone else’s life"' },
+  { 'Thomas Edison': '"Success is one percent inspiration, ninety-nine percent perspiration."' },
+  { 'Kurt Cobain': '"I\'d rather be hated for who I am, than loved for who I am not."' },
+  { 'Leonardo da Vinci': '"Simplicity is the ultimate sophistication."' }
   ],
   [
-    {'М.А. Булгаков "Мастер и Маргарита"':'"...самый страшный гнев, гнев бессилия."'},
-    {'Ф.М. Достоевский "Идиот"':'"Пройдите мимо нас и простите нам наше счастье."'},
-    {'Ф. Раневская':'"Если у тебя есть человек, которому можно рассказать сны, ты не имеешь права считать себя одиноким..."'},
-    {'П.Я. Чаадаев':'"Бессильный враг – наш лучший друг; завистливый друг – злейший из наших врагов."'},
-    {'Б. Стругацкий':'"Начинать всегда стоит с того, что сеет сомнения."'},
-    {'Фазиль Искандер':'"Настоящая ответственность бывает только личной."'},
-    {'Л.Н. Толстой':'"Каждый хочет изменить человечество, но никто не задумывается о том, как изменить себя."'},
-    {'А.П. Чехов':'"Бывают минуты, за которые можно отдать месяцы и годы."'},
-    {'Б. Ахмадулина':'"Не тот дорог, с кем хорошо, а тот, без которого плохо."'},
-    {'С. Есенин':'"Так мало пройдено дорог, Так много сделано ошибок…"'}
+    { 'М.А. Булгаков "Мастер и Маргарита"': '"...самый страшный гнев, гнев бессилия."' },
+    { 'Ф.М. Достоевский "Идиот"': '"Пройдите мимо нас и простите нам наше счастье."' },
+    { 'Ф. Раневская': '"Если у тебя есть человек, которому можно рассказать сны, ты не имеешь права считать себя одиноким..."' },
+    { 'П.Я. Чаадаев': '"Бессильный враг – наш лучший друг; завистливый друг – злейший из наших врагов."' },
+    { 'Б. Стругацкий': '"Начинать всегда стоит с того, что сеет сомнения."' },
+    { 'Фазиль Искандер': '"Настоящая ответственность бывает только личной."' },
+    { 'Л.Н. Толстой': '"Каждый хочет изменить человечество, но никто не задумывается о том, как изменить себя."' },
+    { 'А.П. Чехов': '"Бывают минуты, за которые можно отдать месяцы и годы."' },
+    { 'Б. Ахмадулина': '"Не тот дорог, с кем хорошо, а тот, без которого плохо."' },
+    { 'С. Есенин': '"Так мало пройдено дорог, Так много сделано ошибок…"' }
   ],
   [
-    {'У. Караткевiч':'"Дзе мой край? Там, дзе людзі ніколі ня будуць рабамі!"'},
-    { 'У. Караткевiч':'"Хто забыў сваіх продкаў – сябе губляе, Хто забыў сваю мову – усё згубіў."'},
-    {'Я. Купала "Мужык"':'"Кожны народ сам сабе пан."'},
-    {'Я. Колас "Новая зямля"':'"Хоць, праўда, хлеб ядуць і з вуды, Але не ўсе і не заўсюды."'},
-    {'Я. Колас "Песнi вясны"':'"Дружнасць – першы крок свабоды, Згода – сіла грамады."'},
-    { 'C. Алексiевич':'"Навучыцца б шанаваць маленькае чалавечае жыццё!"'},
-    {'В. Быкаў':'"Жыццё - вось адзіная каштоўнасць для ўсяго існага, і для чалавека таксама."'},
-    {'Я. Колас':'"Добра быць у дарозе, якую ты сам сабе выбіраеш."'},
-    {'Янка Брыль':'"Ты пачынаешся тады, калі ты робіш выбар сам"'},
-    {'Янка Брыль':'"Мой свет – мая вера, надзея, любоў – са мною."'}
+    { 'У. Караткевiч': '"Дзе мой край? Там, дзе людзі ніколі ня будуць рабамі!"' },
+    { 'У. Караткевiч': '"Хто забыў сваіх продкаў – сябе губляе, Хто забыў сваю мову – усё згубіў."' },
+    { 'Я. Купала "Мужык"': '"Кожны народ сам сабе пан."' },
+    { 'Я. Колас "Новая зямля"': '"Хоць, праўда, хлеб ядуць і з вуды, Але не ўсе і не заўсюды."' },
+    { 'Я. Колас "Песнi вясны"': '"Дружнасць – першы крок свабоды, Згода – сіла грамады."' },
+    { 'C. Алексiевич': '"Навучыцца б шанаваць маленькае чалавечае жыццё!"' },
+    { 'В. Быкаў': '"Жыццё - вось адзіная каштоўнасць для ўсяго існага, і для чалавека таксама."' },
+    { 'Я. Колас': '"Добра быць у дарозе, якую ты сам сабе выбіраеш."' },
+    { 'Янка Брыль': '"Ты пачынаешся тады, калі ты робіш выбар сам"' },
+    { 'Янка Брыль': '"Мой свет – мая вера, надзея, любоў – са мною."' }
   ]
+];
+export const focusTitles = [
+  'Your main task for today ?',
+  'Ваша основная задача на сегодня ?',
+  'Ваша асноўная задача на сёння ?'
 ]

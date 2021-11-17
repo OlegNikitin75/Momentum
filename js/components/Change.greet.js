@@ -1,5 +1,6 @@
 import { greet } from './Data.js';
 import changeQuote from './Change.quote.js';
+import changeFocus from './Change.focus.js';
 import { hours } from './Get.date.js';
 const changeGreeting = () => {
 
@@ -9,6 +10,7 @@ const changeGreeting = () => {
 
   
   val = Number(localStorage.getItem('val'));
+  const valFocus = localStorage.getItem('focus-task');
   langList.options[val].selected = true;
   const TimeChange = () => {
     if (hours >= 0 && hours < 6) greeting.innerText = greet[val][0];
@@ -22,6 +24,7 @@ const changeGreeting = () => {
     val = langList.options[langList.selectedIndex].value;
     TimeChange();
     changeQuote(val);
+    changeFocus(val,valFocus);
     localStorage.setItem('val', val);
   });
 }
