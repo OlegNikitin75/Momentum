@@ -17,11 +17,9 @@ const activePref = () => {
   checkboxes.forEach(checkbox => {
     const checkId = checkbox.id;
     const value = localStorage.getItem(checkId);
-
     if (value === 'true') {
       checkbox.checked = true;
     }
-
     if (value === 'false') {
       checkbox.checked = false;
     }
@@ -30,15 +28,15 @@ const activePref = () => {
   sectionRender.forEach(section => {
     const key = section.dataset.name;
     const value = localStorage.getItem(key);
-
-    if (value === 'false') section.classList.add('section-render--disabled');
-    // if (value === 'false' && section.nextElementSibling.classList.contains('quote__settings')) {
-    //   section.nextElementSibling.classList.add('section-render--disabled');
-    // }
-      
+    if (value === 'false') {
+      section.classList.add('section-render--disabled');
+      if (section.classList.contains('quote__inner')) {
+        document.querySelector('.quote__settings')
+          .classList.add('section-render--disabled');
+      }
+    }
     if (value === 'true') section.classList.remove('section-render--disabled');
   });
-
   btnPref.addEventListener('click', () => {
     btnPref.classList.toggle('pref-button--active');
     form.classList.toggle('pref-form--active');

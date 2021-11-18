@@ -10,7 +10,7 @@
   --btn-bg: linear-gradient(0deg, rgb(70, 115, 249) 31%, rgb(239, 252, 252));
   --color-elem-bg: rgba(256, 256, 256, 0.3);
   --color-form: rgba(0, 0, 0, 0.4);
-  --color-overlay: rgba(0, 0, 0, 0.2);
+  --color-overlay: rgba(0, 0, 0, 0.3);
 }
 
 /* FONTS LOAD SECTION */
@@ -62,6 +62,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  user-select: none;
 }
 .overlay{
   position: absolute;
