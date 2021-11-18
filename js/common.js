@@ -8,10 +8,12 @@ import changeImgBg from './components/Change.img.js';
 import changeQuote from './components/Change.quote.js';
 import changeFocus from './components/Change.focus.js';
 import setElemLang from './components/Change.lang.elem.js';
+import activePref from './components/Active.pref.js';
 
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  
  
   const val = localStorage.getItem('val');
   const valFocus = localStorage.getItem('focus-task');
@@ -25,7 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
   changeImgBg();
   changeQuote(val);
   setElemLang(val);
-  changeFocus(val,valFocus);
+  changeFocus(val, valFocus);
+  activePref();
 
 
 

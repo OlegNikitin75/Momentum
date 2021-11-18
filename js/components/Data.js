@@ -109,9 +109,9 @@ export const quotes = [
   ]
 ];
 export const focusTitles = [
-  'Your main task for today ?',
-  'Ваша основная задача на сегодня ?',
-  'Ваша асноўная задача на сёння ?'
+  'Your main goal for today ?',
+  'Ваша основная цель на сегодня ?',
+  'Ваша асноўная мэта на сёння ?'
 ];
 export const months = [
   [
@@ -201,7 +201,7 @@ export const elemLangs = [
   ],
   [
     'гадзінны',
-    'Ваша шмя',
+    'Ваша iмя',
     'Ачысціць',
     'Прапусцiць',
   ]

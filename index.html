@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <div class="overlay"></div>
   <div class="wrapper">
     <header class="header">
       <div class="container">
@@ -25,11 +26,7 @@
             <audio></audio>
           </li>
           <li class="header__item">
-            <select class="select select__lang" name="lang" id="select-lang">
-              <option class="select__item" value="0">Eng</option>
-              <option class="select__item" value="1">Рус</option>
-              <option class="select__item" value="2">Бел</option>
-            </select>
+
           </li>
         </ul>
       </div>
@@ -37,7 +34,7 @@
     <main class="main">
       <div class="container">
 
-        <section class="section-time section">
+        <section class="section-time section section--render" data-name="clock">
           <div class="col col--left">
             <div class="time__mark">PM</div>
           </div>
@@ -46,7 +43,8 @@
           <div class="time__settings settings col col--right">
             <button class="btn btn-reset settings__clock"></button>
             <fieldset class="fieldset fieldset__format">
-              <legend class="legend legend__format"><span>24</span><span class="legend legend__text elem__lang" data-elem = '0'>hours</span></legend>
+              <legend class="legend legend__format"><span>24</span><span class="legend legend__text elem__lang"
+                  data-elem='0'>hours</span></legend>
               <label class="label">
                 <input class="checkbox-input" type="checkbox" checked>
                 <span class="checkbox-input--clone"></span>
@@ -56,21 +54,19 @@
             </fieldset>
           </div>
         </section>
-
-        <section class="section-date section">
+        <section class="section-date section section--render" data-name="date">
           <div class="col col--left"></div>
           <div class="date__inner">
-            <span class="date__span date__span--date">10</span>
-            <span class="date__span date__span--month">мая</span>
-            <span class="date__span date__span--year">2021</span>
+            <span class="date__span date__span--day"></span>
+            <span class="date__span date__span--mark">,</span>
+            <span class="date__span date__span--date"></span>
+            <span class="date__span date__span--month"></span>
+            <span class="date__span date__span--year"></span>
             <span class="date__span date__span--mark">г.</span>
-            <span class="date__span date__span--day">Понедельник</span>
-
           </div>
           <div class="col col--right"></div>
-
         </section>
-        <section class="section-greeting section">
+        <section class="section-greeting section  section--render" data-name="greeting">
           <div class="col col--left">
             <div class="time__mark"></div>
           </div>
@@ -83,11 +79,11 @@
           <div class="greeting__settings settings col col--right">
             <button class="btn btn-reset settings__greeting"></button>
             <fieldset class="fieldset fieldset__greeting fieldset__dim">
-              <button class="btn-reset greeting__btn fieldset__btn elem__lang" data-elem ='1'>Edit Name</button>
+              <button class="btn-reset greeting__btn fieldset__btn elem__lang" data-elem='1'>Edit Name</button>
             </fieldset>
           </div>
         </section>
-        <section class="section-focus">
+        <section class="section-focus section--render"  data-name="goal">
           <div class="section-focus__inner">
             <div class="col col--left"></div>
             <div class="focus__inner">
@@ -104,23 +100,61 @@
             <span class="focus__input" contenteditable="true"></span>
           </div>
         </section>
-
-
-
       </div>
     </main>
     <footer class="footer">
-      <div class="col col--left">
-      </div>
-      <div class="quote quote__inner">
-        <h2 class="quote__title text-reset"></h2>
-        <span class="quote__author"></span>
-      </div>
-      <div class="quote__settings settings col col--right">
-        <button class="btn btn-reset settings__quote"></button>
-        <fieldset class="fieldset fieldset__quote fieldset__dim">
-          <button class="btn-reset quote__btn fieldset__btn elem__lang" data-elem ='3'>Next Quote</button>
-        </fieldset>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="col col--left">
+            <div class="pref">
+              <button class="pref-button btn-reset"></button>
+              <form action=" " class="pref-form">
+
+                <fieldset class="pref__fieldset">
+                  <legend class="pref__legend">Select lang </legend>
+                  <select class="select select__lang" name="lang" id="select-lang">
+                    <option class="select__item" value="0">English</option>
+                    <option class="select__item" value="1">Русский</option>
+                    <option class="select__item" value="2">Belarusian</option>
+                  </select>
+                </fieldset>
+                <fieldset class="pref__fieldset">
+                  <legend class="pref__legend">View</legend>
+                  <label class="pref__label">Clock
+                    <input class="pref__checkbox" type="checkbox" name="clock" id="clock" checked>
+                    <span class="pref__checkbox--shift"></span>
+                  </label>
+                  <label class="pref__label">Date
+                    <input class="pref__checkbox" type="checkbox" name="date" id="date" checked>
+                    <span class="pref__checkbox--shift"></span>
+                  </label>
+                  <label class="pref__label">Greeting
+                    <input class="pref__checkbox" type="checkbox" name="greeting" id="greeting" checked>
+                    <span class="pref__checkbox--shift"></span>
+                  </label>
+                  <label class="pref__label">Main goal
+                    <input class="pref__checkbox" type="checkbox" name="goal" id="goal" checked>
+                    <span class="pref__checkbox--shift"></span>
+                  </label>
+                  <label class="pref__label">Quotes
+                    <input class="pref__checkbox" type="checkbox" name="quotes" id="quotes" checked>
+                    <span class="pref__checkbox--shift"></span>
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+          <div class="quote quote__inner section--render" data-name="quotes">
+            <h2 class="quote__title text-reset"></h2>
+            <span class="quote__author"></span>
+          </div>
+          <div class="quote__settings settings col col--right">
+            <button class="btn btn-reset settings__quote"></button>
+            <fieldset class="fieldset fieldset__quote fieldset__dim">
+              <button class="btn-reset quote__btn fieldset__btn elem__lang" data-elem='3'>Next Quote</button>
+            </fieldset>
+          </div>
+        </div>
       </div>
     </footer>
   </div>
