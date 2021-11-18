@@ -1,6 +1,8 @@
 import { greet } from './Data.js';
 import changeQuote from './Change.quote.js';
 import changeFocus from './Change.focus.js';
+import setDateToday  from './Set.today.js';
+import setElemLang  from './Change.lang.elem.js';
 import { hours } from './Get.date.js';
 const changeGreeting = () => {
 
@@ -22,8 +24,10 @@ const changeGreeting = () => {
   
   langList.addEventListener('change', () => {
     val = langList.options[langList.selectedIndex].value;
+    setElemLang(val);
     TimeChange();
     changeQuote(val);
+    setDateToday(val);
     changeFocus(val,valFocus);
     localStorage.setItem('val', val);
   });

@@ -5,7 +5,8 @@ const timeSettings = () => {
   parentClock.addEventListener('mouseover', () => btnSettings.classList.add('btn--active'));
   parentClock.addEventListener('mouseout', () => btnSettings.classList.remove('btn--active'));
   btnSettings.addEventListener('click', () => {
-    fieldsetFormat.classList.toggle('active');
+    
+    fieldsetFormat.classList.add('active');
     if (fieldsetFormat.classList.contains('active'))
       setTimeout(() => fieldsetFormat.classList.remove('active'), 5000);
   });

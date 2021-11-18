@@ -36,6 +36,7 @@
     </header>
     <main class="main">
       <div class="container">
+
         <section class="section-time section">
           <div class="col col--left">
             <div class="time__mark">PM</div>
@@ -43,12 +44,9 @@
           <div class="time__inner">
           </div>
           <div class="time__settings settings col col--right">
-
-
-
             <button class="btn btn-reset settings__clock"></button>
             <fieldset class="fieldset fieldset__format">
-              <legend class="legend legend__format"><span>24 hours</span></legend>
+              <legend class="legend legend__format"><span>24</span><span class="legend legend__text elem__lang" data-elem = '0'>hours</span></legend>
               <label class="label">
                 <input class="checkbox-input" type="checkbox" checked>
                 <span class="checkbox-input--clone"></span>
@@ -57,6 +55,20 @@
 
             </fieldset>
           </div>
+        </section>
+
+        <section class="section-date section">
+          <div class="col col--left"></div>
+          <div class="date__inner">
+            <span class="date__span date__span--date">10</span>
+            <span class="date__span date__span--month">мая</span>
+            <span class="date__span date__span--year">2021</span>
+            <span class="date__span date__span--mark">г.</span>
+            <span class="date__span date__span--day">Понедельник</span>
+
+          </div>
+          <div class="col col--right"></div>
+
         </section>
         <section class="section-greeting section">
           <div class="col col--left">
@@ -71,27 +83,28 @@
           <div class="greeting__settings settings col col--right">
             <button class="btn btn-reset settings__greeting"></button>
             <fieldset class="fieldset fieldset__greeting fieldset__dim">
-              <button class="btn-reset greeting__btn fieldset__btn">Edit Name</button>
+              <button class="btn-reset greeting__btn fieldset__btn elem__lang" data-elem ='1'>Edit Name</button>
             </fieldset>
           </div>
         </section>
         <section class="section-focus">
           <div class="section-focus__inner">
-            <div class="col col--left">
-            </div>
+            <div class="col col--left"></div>
             <div class="focus__inner">
-              <h3 class="section-focus__title text-reset">dddddddddddddddddddddrdddddd</h3>
-              
+              <h3 class="section-focus__title text-reset"></h3>
             </div>
             <div class="focus__settings settings col col--right">
               <button class="btn btn-reset settings__focus"></button>
+              <fieldset class="fieldset fieldset__focus fieldset__dim">
+                <button class="btn-reset focus__btn fieldset__btn elem__lang" data-elem='2'>Clear</button>
+              </fieldset>
             </div>
           </div>
           <div class="focus__input-box">
             <span class="focus__input" contenteditable="true"></span>
           </div>
         </section>
-        
+
 
 
       </div>
@@ -106,7 +119,7 @@
       <div class="quote__settings settings col col--right">
         <button class="btn btn-reset settings__quote"></button>
         <fieldset class="fieldset fieldset__quote fieldset__dim">
-          <button class="btn-reset quote__btn fieldset__btn">Next Quote</button>
+          <button class="btn-reset quote__btn fieldset__btn elem__lang" data-elem ='3'>Next Quote</button>
         </fieldset>
       </div>
     </footer>

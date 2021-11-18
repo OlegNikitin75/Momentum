@@ -1,15 +1,12 @@
 import { quotes } from './Data.js';
 import getRandomIntInclusive from './Get.random.number.js';
 import { hours } from './Get.date.js';
-
-
 const changeQuote = (val) => {
   const quote = document.querySelector('.quote__title');
   const quoteAuthor = document.querySelector('.quote__author');
   const btnQuote = document.querySelector('.settings__quote');
   const parentQuote = document.querySelector('.footer');
   const fieldsetQuote = document.querySelector('.fieldset__quote');
-
   const valLang = val;
   const getQuote = () => {
     const quotesLang = quotes[valLang];
@@ -23,11 +20,10 @@ const changeQuote = (val) => {
   parentQuote.addEventListener('mouseover', () => btnQuote.classList.add('btn--active'));
   parentQuote.addEventListener('mouseout', () => btnQuote.classList.remove('btn--active'));
   btnQuote.addEventListener('click', () => {
-    fieldsetQuote.classList.toggle('active');
+    fieldsetQuote.classList.add('active');
     if (fieldsetQuote.classList.contains('active'))
       setTimeout(() => fieldsetQuote.classList.remove('active'), 5000);
     fieldsetQuote.addEventListener('click', () => getQuote());
   });
 };
-
 export default changeQuote;
