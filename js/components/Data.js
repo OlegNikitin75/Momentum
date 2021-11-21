@@ -109,9 +109,9 @@ export const quotes = [
   ]
 ];
 export const focusTitles = [
-  'Your main goal for today ?',
-  'Ваша основная цель на сегодня ?',
-  'Ваша асноўная мэта на сёння ?'
+  'What will we focus on today ?',
+  'На чем сосредоточимся сегодня ?',
+  'На чым засяродзімся сёння ?'
 ];
 export const months = [
   [
@@ -159,31 +159,33 @@ export const months = [
 ];
 export const days = [
   [
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-    'Sunday'
+    'Sunday ,',
+    'Monday ,',
+    'Tuesday ,',
+    'Wednesday ,',
+    'Thursday ,',
+    'Friday ,',
+    'Saturday ,'
   ],
   [
+    'Воскресенье',
     'Понедельник',
     'Вторник',
     'Среда',
     'Четверг',
     'Пятница',
-    'Суббота',
-    'Воскресенье'
+    'Суббота'
+    
   ],
   [
+    'Нядзеля',
     'Панядзелак',
     'Аўторак',
     'Серада',
     'Чацвер',
     'Пятніца',
-    'Субота',
-    'Нядзеля',
+    'Субота'
+    
   ]
 ];
 export const elemLangs = [

@@ -11,13 +11,13 @@ const setDateToday = (val) => {
   todayDate.innerText = date;
   switch (val) {
     case '0': todayMonth.innerText = months[0][month];
-      todayDay.innerText = days[0][day - 1];
+      todayDay.innerText = days[0][day];
       break;
     case '1': todayMonth.innerText = months[1][month];
-      todayDay.innerText = days[1][day - 1];
+      todayDay.innerText = days[1][day];
       break;
     case '2': todayMonth.innerText = months[2][month];
-      todayDay.innerText = days[2][day - 1];
+      todayDay.innerText = days[2][day];
       break;
   }
   todayYear.innerText = year;
