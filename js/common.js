@@ -9,6 +9,11 @@ import changeQuote from './components/Change.quote.js';
 import changeFocus from './components/Change.focus.js';
 import setElemLang from './components/Change.lang.elem.js';
 import activePref from './components/Active.pref.js';
+import activeMenu from './components/Theme.menu.js';
+import control from './components/Player.control.js';
+import actionSlider from './components/Slider.js';
+import actionItem from './components/Header.item.action.js';
+
 
 
 
@@ -29,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
   setElemLang(val);
   changeFocus(val, valFocus);
   activePref();
+  actionSlider();
+  activeMenu();
+  control();
+  actionItem();
 
 
 
