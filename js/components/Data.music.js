@@ -54,7 +54,6 @@ export const srcs = [
 ];
 export const source = [
   [
-    '../images/slider-img/nature/slide_0.jpg',
     '../images/slider-img/nature/slide_1.jpg',
     '../images/slider-img/nature/slide_2.jpg',
     '../images/slider-img/nature/slide_3.jpg',
@@ -73,7 +72,6 @@ export const source = [
     
   ],
   [
-    '../images/slider-img/auto/slide_0.jpg',
     '../images/slider-img/auto/slide_1.jpg',
     '../images/slider-img/auto/slide_2.jpg',
     '../images/slider-img/auto/slide_3.jpg',
@@ -91,7 +89,6 @@ export const source = [
     '../images/slider-img/auto/slide_15.jpg',
   ],
   [
-    '../images/slider-img/music/slide_0.jpg',
     '../images/slider-img/music/slide_1.jpg',
     '../images/slider-img/music/slide_2.jpg',
     '../images/slider-img/music/slide_3.jpg',
@@ -106,10 +103,10 @@ export const source = [
     '../images/slider-img/music/slide_12.jpg',
     '../images/slider-img/music/slide_13.jpg',
     '../images/slider-img/music/slide_14.jpg',
+    '../images/slider-img/music/slide_15.jpg',
     
   ],
   [
-    '../images/slider-img/aviation/slide_0.jpg',
     '../images/slider-img/aviation/slide_1.jpg',
     '../images/slider-img/aviation/slide_2.jpg',
     '../images/slider-img/aviation/slide_3.jpg',
@@ -128,7 +125,6 @@ export const source = [
     
   ],
   [
-    '../images/slider-img/games/slide_0.jpg',
     '../images/slider-img/games/slide_1.jpg',
     '../images/slider-img/games/slide_2.jpg',
     '../images/slider-img/games/slide_3.jpg',
@@ -147,7 +143,6 @@ export const source = [
 
   ],
   [
-    '../images/slider-img/new_year/slide_0.jpg',
     '../images/slider-img/new_year/slide_1.jpg',
     '../images/slider-img/new_year/slide_2.jpg',
     '../images/slider-img/new_year/slide_3.jpg',

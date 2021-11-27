@@ -4,7 +4,12 @@ const setElemLang = (val) => {
 
   elements.forEach(elem => {
     const elemDataElem = elem.dataset.elem;
-    elem.innerText = elemLangs[val][elemDataElem];
+    if (elem.classList.contains('label')) {
+      elem.firstChild.textContent = elemLangs[val][elemDataElem];
+    } else {
+      elem.textContent = elemLangs[val][elemDataElem];
+    }
+    
     
   });
 

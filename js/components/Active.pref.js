@@ -19,12 +19,13 @@ const activePref = () => {
     const value = localStorage.getItem(checkId);
     if (value === 'true') {
       checkbox.checked = true;
+      checkbox.parentNode.lastElementChild.classList.remove('checkbox__indicator--disable');
     }
     if (value === 'false') {
       checkbox.checked = false;
+      checkbox.parentNode.lastElementChild.classList.add('checkbox__indicator--disable');
     }
   });
-
   sectionRender.forEach(section => {
     const key = section.dataset.name;
     const value = localStorage.getItem(key);
@@ -43,6 +44,8 @@ const activePref = () => {
   });
   form.addEventListener('change', (e) => {
     if (e.target.classList.contains('pref__checkbox')) {
+      
+      e.target.parentNode.lastElementChild.classList.toggle('checkbox__indicator--disable');
       const idValue = e.target.id;
       const check = e.target.checked;
       localStorage.setItem(idValue, check)

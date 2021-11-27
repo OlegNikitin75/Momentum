@@ -23,7 +23,7 @@
     <header class="header">
       <div class="container">
         <ul class="header__list list-reset">
-          
+
           <li class="header__item">
             <audio></audio>
           </li>
@@ -37,7 +37,10 @@
               <div class="slider__container">
                 <div class="slider__overlay"></div>
                 <div class="slider__settings-buttons">
-                  <button class="slider__settings-btn  slider__settings-btn--play btn-reset btn__pause"></button>
+                  <div class="slider-btn">
+                    <img class="slider-btn__control slider-btn__prev" src="./images/arrow-left-circle.svg" alt="icon">
+                    <img class="slider-btn__control slider-btn__next" src="./images/arrow-right-circle.svg" alt="icon">
+                  </div>
                   <button class="slider__settings-btn slider__settings-btn--settings btn-reset"></button>
                 </div>
 
@@ -161,26 +164,37 @@
                   </select>
                 </fieldset>
                 <fieldset class="pref__fieldset">
-                  <legend class="pref__legend">View</legend>
-                  <label class="pref__label">Clock
-                    <input class="pref__checkbox" type="checkbox" name="clock" id="clock" checked>
-                    <span class="pref__checkbox--shift"></span>
+                  <label class="pref__label label elem__lang" data-elem='4'>Clock
+                    <input class="checkbox-input pref__checkbox" type="checkbox" name="clock" id="clock" checked>
+                    <span class="checkbox-input--clone">
+                    </span>
+                    <i class="checkbox__indicator"></i>
                   </label>
-                  <label class="pref__label">Date
-                    <input class="pref__checkbox" type="checkbox" name="date" id="date" checked>
-                    <span class="pref__checkbox--shift"></span>
+
+                  <label class="pref__label label elem__lang" data-elem='5'>Date
+                    <input class="checkbox-input pref__checkbox" type="checkbox" name="date" id="date" checked>
+                    <span class="checkbox-input--clone">
+                    </span>
+                    <i class="checkbox__indicator"></i>
                   </label>
-                  <label class="pref__label">Greeting
-                    <input class="pref__checkbox" type="checkbox" name="greeting" id="greeting" checked>
-                    <span class="pref__checkbox--shift"></span>
+                  <label class="pref__label label elem__lang" data-elem='6'>Greeting
+                    <input class="checkbox-input pref__checkbox" type="checkbox" name="greeting" id="greeting" checked>
+                    <span class="checkbox-input--clone">
+                    </span>
+                    <i class="checkbox__indicator"></i>
                   </label>
-                  <label class="pref__label">Main goal
-                    <input class="pref__checkbox" type="checkbox" name="goal" id="goal" checked>
-                    <span class="pref__checkbox--shift"></span>
+                  <label class="pref__label label elem__lang" data-elem='7'>Main goal
+                    <input class="checkbox-input pref__checkbox" type="checkbox" name="goal" id="goal" checked>
+                    <span class="checkbox-input--clone">
+                    </span>
+                    <i class="checkbox__indicator"></i>
                   </label>
-                  <label class="pref__label">Quotes
-                    <input class="pref__checkbox" type="checkbox" name="quotes" id="quotes" checked>
-                    <span class="pref__checkbox--shift"></span>
+
+                  <label class="pref__label label elem__lang" data-elem='8'>Quotes
+                    <input class="checkbox-input pref__checkbox" type="checkbox" name="quotes" id="quotes" checked>
+                    <span class="checkbox-input--clone">
+                    </span>
+                    <i class="checkbox__indicator"></i>
                   </label>
                 </fieldset>
               </form>
