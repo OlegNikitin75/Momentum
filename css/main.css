@@ -130,7 +130,6 @@ body {
 }
 .header__list {
   width: 100%;
-  height: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -405,7 +404,12 @@ body {
   background-image: url("../images/arrow-clockwise.svg");
 }
 .quote__settings {
+  position: relative;
   padding-top: 30px;
+  display:flex;
+}
+.fieldset__quote {
+  margin-right: 20px;
 }
 .pref-button {
   width: 25px;
@@ -417,8 +421,6 @@ body {
 }
 .pref-button--active {
   transform: scale(1.4);
-  filter: brightness(0) saturate(100%) invert(100%) sepia(93%) saturate(28%) hue-rotate(106deg) brightness(107%)
-    contrast(106%);
 }
 .pref {
   display: flex;
@@ -427,7 +429,7 @@ body {
 }
 .pref-form {
   position: absolute;
-  min-width: 320px;
+  width: 300px;
   bottom: 100%;
   transform: translateX(-150%);
   opacity: 0;
@@ -437,13 +439,9 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
-
 .pref-form .checkbox__indicator{
     top: 2px;
 }
-
-
-
 .pref-form--active {
   transform: translateX(0);
   opacity: 1;
@@ -563,7 +561,7 @@ body {
 .slider-btn__control {
   transform: scale(1.5);
   cursor: pointer;
-  dis
+  
 }
 .slider-btn__control+.slider-btn__control {
   margin-left: 20px;
@@ -722,4 +720,169 @@ input[type="range"]::-ms-fill-lower {
 }
 input[type="range"]::-ms-fill-upper {
   background-color: transparent;
+}
+
+.header__item--weather{
+  text-align: center;
+  width: 300px;
+  border: 2px solid var(--accent-color);
+  min-height: 220px;
+  border-radius: 10px;
+  background-color:var(--color-form);
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.city {  
+  width: 100%;
+  border-radius: 5px;
+}
+.temperature {    
+  font-size: 30px;
+}
+.weather-description {
+ width: 100%;
+  font-size: 20px;
+  color: var(--accent-color);
+  background-color:transparent;
+  border-radius: 5px;
+}
+.weather-icon {
+  font-size: 60px;
+  color: var(--accent-color);
+}
+.weather-icon:hover {
+  animation: shake 1.5s;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+}
+.btn__todo {
+  background-image:url("../images/journal-check.svg");
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  background-size:cover;
+  background-repeat:no-repeat;
+  transition: transform 0.5s ease-in-out;
+  
+}
+.btn__todo--active {
+ transform: scale(1.4);
+}
+.todo {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  transform: translateX(150%);
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 300px;
+  color: inherit;
+  padding: 15px;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  margin-left: auto;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.todo--active {
+transform: translateX(0%);
+ opacity: 1;
+}
+.todo__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+.todo__new {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.todo__new-text {
+  flex: auto;
+  max-width: 210px;
+  border-bottom: 1px solid #ffffff;
+  margin-right: 20px;
+}
+.todo__new-text:focus {
+  background-color: rgba(256, 256, 256, 0.4);
+  border: none;
+  outline: none;
+}
+.todo__content--edit {
+  background-color: rgba(256, 256, 256, 0.4);
+  border: none;
+  outline: none;
+}
+.todo__new-btn {
+  width: 36px;
+  height: 36px;
+  border-radius:50%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.todo__new-btn-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.todo__list {
+  list-style: none;
+  padding: 0;
+}
+.todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+.todo__btn {
+  width: 22px;
+}
+.todo__btn--edit {
+  margin-right: 10px;
+  margin-left: auto;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(11%) saturate(1%) hue-rotate(69deg) brightness(109%)
+    contrast(102%);
+}
+
+.todo__checkbox {
+  appearance: none;
+  display: none;
+}
+.todo__fake {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo__fake:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  visibility: hidden;
+  transition: visibility 0.3s ease-in-out;
+}
+.todo__checkbox:checked ~ .todo__fake:before {
+  visibility: visible;
+}
+.todo__item-text {
+  margin: 0;
+  flex: auto;
+  width: 100%;
+  max-width: 170px;
+  margin: 0 10px;
 }

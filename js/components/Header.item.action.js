@@ -15,7 +15,6 @@ const itemAction = () => {
       player.classList.remove('player--active');
       isVisible = true;
       playerBtn.style.left = 'calc(100% - 30px)';
-
     }
   };
   const visiblePlayerSlider = () => {
@@ -35,12 +34,8 @@ const itemAction = () => {
   playerBtn.addEventListener('click', () => {
     visibleHiddenPlayer();
   });
-
   btnClose.addEventListener('click', () => {
     visiblePlayerSlider();
   });
-
-
-
 };
 export default itemAction;

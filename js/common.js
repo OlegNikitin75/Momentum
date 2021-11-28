@@ -12,6 +12,8 @@ import activePref from './components/Active.pref.js';
 import control from './components/Player.control.js';
 import actionSlider from './components/Slider.js';
 import actionItem from './components/Header.item.action.js';
+import getWeatherToday from './components/Weather.js';
+import actionTodo from './components/Todo.js';
 
 
 
@@ -36,6 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
   actionSlider();
   control();
   actionItem();
+  getWeatherToday();
+  actionTodo();
 
 
 
