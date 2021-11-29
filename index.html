@@ -24,15 +24,32 @@
     <header class="header">
       <div class="container">
         <ul class="header__list list-reset">
-
+          
           <li class="header__item  header__item--weather">
-            <div class="city" contenteditable="true">Гомель</div>
-            <i class="weather-icon owf"></i>
-            <div class="temperature"></div>
-            <div class="weather-description"></div>
-            <div class="weather-speed"></div>
-            <div class="weather-direction"></div>
-            <div class="weather-humidity"></div>
+            <button class="btn-reset btn__weather">
+              <img class="weather__img-btn" src="./images/weather.svg" alt="icon">
+            </button>
+            <div class="weather">
+              <div class="city" contenteditable="true">Гомель</div>
+              <i class="weather-icon owf"></i>
+              <div class="weather__box">
+                <img class="weather__img" src="./images/thermometer.svg" alt="icon">
+                <div class="temperature"></div>
+              </div>
+              <div class="weather-description"></div>
+              <div class="weather__custom">
+                <div class="weather__box">
+                  <img class="weather__img" src="./images/wind.svg" alt="icon">
+                  <div class="weather-speed"></div>
+                </div>
+                <div class="weather__box">
+                  <img class="weather__img" src="./images/humidity.svg" alt="icon">
+                  <div class="weather-humidity"></div>
+                </div>
+  
+                <div class="weather-direction"></div>
+              </div>
+            </div>
           </li>
           <li class="header__item">
 
@@ -160,10 +177,9 @@
           <div class="col col--left">
             <div class="pref">
               <button class="pref-button btn-reset"></button>
-              <form action=" " class="pref-form">
-
+              <form class="pref-form">
                 <fieldset class="pref__fieldset">
-                  <legend class="pref__legend">Select lang </legend>
+                  <legend class="pref__legend">Select Lang </legend>
                   <select class="select select__lang" name="lang" id="select-lang">
                     <option class="select__item" value="0">English</option>
                     <option class="select__item" value="1">Русский</option>
@@ -216,21 +232,24 @@
             <fieldset class="fieldset fieldset__quote fieldset__dim">
               <button class="btn-reset quote__btn fieldset__btn elem__lang" data-elem='3'>Next Quote</button>
             </fieldset>
-            <button class="btn__todo btn-reset"></button>
-            <div class="todo">
-              <div class="todo__header">
-                <h4 class="todo__title">ToDo List</h4>
-              </div>
-              <div class="todo__body">
-                <div class="todo__new">
-                  <span class="todo__new-text" contenteditable></span>
-                  <button class="todo__new-btn">
-                    <img class="todo__new-btn-icon" src="./images/plus-circle.svg" alt="icon">
-                  </button>
+            
+           <div class="todo__wrapper">
+              <button class="btn__todo btn-reset"></button>
+              <div class="todo">
+                <div class="todo__header">
+                  <h4 class="todo__title">ToDo List</h4>
                 </div>
-                <ul class="todo__list"></ul>
+                <div class="todo__body">
+                  <div class="todo__new">
+                    <span class="todo__new-text" contenteditable></span>
+                    <button class="todo__new-btn">
+                      <img class="todo__new-btn-icon" src="./images/plus-circle.svg" alt="icon">
+                    </button>
+                  </div>
+                  <ul class="todo__list"></ul>
+                </div>
               </div>
-            </div>
+           </div>
           </div>
         </div>
       </div>
