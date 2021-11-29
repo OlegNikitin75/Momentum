@@ -134,7 +134,7 @@ body {
 
 .header__item--player {
   position: relative;
-  flex-basis: 500px;
+  flex-basis: 330px;
 }
 .btn__player {
   position: absolute;
@@ -502,8 +502,8 @@ body {
   right: 0;
   z-index: 20;
   transform: translateX(150%);
-  width: 440px;
-  max-width: 440px;
+  width: 100%;
+  max-width: 300px;
   margin: 0 auto;
   background-color: transparent;
   display: flex;
@@ -527,7 +527,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  min-height: 250px;
+  min-height: 200px;
   background-image: url("../images/slider-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -672,11 +672,11 @@ body {
 .time__start {
   margin-left: 0;
   margin-right: auto;
-  color: #b6b6b6;
+  color: var(--accent-color);
 }
 
 .player__line {
-  margin: 0 20px;
+  margin: 0 10px;
    flex: auto;
 }
 

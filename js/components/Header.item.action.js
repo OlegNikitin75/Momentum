@@ -24,7 +24,7 @@ const itemAction = () => {
     if (isVisible) {
       player.classList.add('player--active');
       isVisible = false;
-      playerBtn.style.left = 0;
+      playerBtn.style.left = '-30px';
     } else {
       player.classList.remove('player--active');
       isVisible = true;
@@ -39,7 +39,7 @@ const itemAction = () => {
       isVisibleSlider = false;
       btnClose.src = './images/chevron-double-down.svg';
     } else {
-      slider.style.minHeight = '250px';
+      slider.style.minHeight = '200px';
       btnClose.src = './images/chevron-double-up.svg';
       boxSliderControls.style.display = 'block';
       isVisibleSlider = true;
