@@ -3,6 +3,7 @@ const activePref = () => {
   const form = document.querySelector('.pref-form');
   const checkboxes = document.querySelectorAll('.pref__checkbox');
   const sectionRender = document.querySelectorAll('.section--render');
+  
   const disabledSection = (idValue) => {
     sectionRender.forEach(item => {
       const nameValue = item.dataset.name;
@@ -10,7 +11,7 @@ const activePref = () => {
         item.classList.toggle('section-render--disabled');
       }
       if (nameValue === 'quotes' && nameValue === idValue) {
-        item.nextElementSibling.classList.toggle('section-render--disabled');
+        item.nextElementSibling.firstElementChild.classList.toggle('section-render--disabled');
       }
     });
   }
@@ -32,7 +33,7 @@ const activePref = () => {
     if (value === 'false') {
       section.classList.add('section-render--disabled');
       if (section.classList.contains('quote__inner')) {
-        document.querySelector('.quote__settings')
+        document.querySelector('.settings-box')
           .classList.add('section-render--disabled');
       }
     }
@@ -44,7 +45,7 @@ const activePref = () => {
   });
   form.addEventListener('change', (e) => {
     if (e.target.classList.contains('pref__checkbox')) {
-      
+
       e.target.parentNode.lastElementChild.classList.toggle('checkbox__indicator--disable');
       const idValue = e.target.id;
       const check = e.target.checked;
